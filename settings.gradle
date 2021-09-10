@@ -1,0 +1,5 @@
+rootProject.name = 'spring_cloud_config'
+include 'cloud_config_server'
+include 'simple_consumer'
+include 'simple_conusmer_only_controller'
+

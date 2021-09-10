@@ -1,0 +1,15 @@
+server.port: 9093
+
+spring:
+  config:
+    import: configserver:http://localhost:8888
+  application:
+    name: example
+  profiles:
+    active: prod #환경 선택
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: ['refresh','beans','env']
